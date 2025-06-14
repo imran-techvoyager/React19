@@ -1,4 +1,5 @@
 import Counter from "./components/Counter";
+import Friends from "./components/Friends";
 
 const ValidPassword = () => <h2>Password valid</h2>
 const InValidPassword = () => <h2>Password invalid</h2>
@@ -38,6 +39,7 @@ const App2 = () => {
         {/* <Copy /> */}
         {/* <Move /> */}
         <Counter />
+        <Friends />
     </div>
   )
 }
