@@ -1,3 +1,5 @@
+import Counter from "./components/Counter";
+
 const ValidPassword = () => <h2>Password valid</h2>
 const InValidPassword = () => <h2>Password invalid</h2>
 
@@ -32,9 +34,10 @@ const App2 = () => {
     <div>
         {/* <Password isTrue={true}/> */}
         {/* <Cart /> */}
-        <Click />
-        <Copy />
-        <Move />
+        {/* <Click /> */}
+        {/* <Copy /> */}
+        {/* <Move /> */}
+        <Counter />
     </div>
   )
 }
