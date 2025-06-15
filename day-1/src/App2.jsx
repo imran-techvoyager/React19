@@ -1,5 +1,7 @@
-import Counter from "./components/Counter";
-import Friends from "./components/Friends";
+// import Counter from "./components/Counter";
+// import Eaxample from "./components/Eaxample";
+// import Friends from "./components/Friends";
+import TodoList from "./components/TodoList";
 
 const ValidPassword = () => <h2>Password valid</h2>
 const InValidPassword = () => <h2>Password invalid</h2>
@@ -38,8 +40,10 @@ const App2 = () => {
         {/* <Click /> */}
         {/* <Copy /> */}
         {/* <Move /> */}
-        <Counter />
-        <Friends />
+        {/* <Counter /> */}
+        {/* <Friends /> */}
+        {/* <Eaxample /> */}
+        <TodoList/>
     </div>
   )
 }
