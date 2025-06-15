@@ -1,9 +1,13 @@
 // import Counter from "./components/Counter";
 // import Eaxample from "./components/Eaxample";
 // import Friends from "./components/Friends";
+import BasicEffect from "./components/BasicEffect";
 import CopyInput from "./components/CopyInput";
+import DataFetch from "./components/DataFetch";
+import HookTwo from "./components/HookTwo";
 import Shopping from "./components/Shopping";
 import Switch from "./components/Switch";
+import ComponentA from "./propdrill/ComponentA";
 // import TodoList from "./components/TodoList";
 
 const ValidPassword = () => <h2>Password valid</h2>
@@ -35,6 +39,14 @@ const handleClick = () => console.log(Math.floor(Math.random()*10));
 const handleCopy = () => alert('You cheater copying my content');
 const handleMove = () => alert('you moved over me!!');
 
+import { createContext } from "react";
+
+export const context = createContext();
+export const context1 = createContext();
+
+const name = "imran ahmed";
+const age = 23;
+
 const App2 = () => {
   return (
     <div>
@@ -49,7 +61,15 @@ const App2 = () => {
         {/* <TodoList/> */}
         {/* <Shopping /> */}
         {/* <CopyInput /> */}
-        <Switch />
+        {/* <Switch /> */}
+        {/* <HookTwo /> */}
+        {/* <DataFetch /> */}
+        {/* <BasicEffect /> */}
+        <context.Provider value={name}>
+            <context1.Provider value={age}>
+               <ComponentA />
+            </context1.Provider>
+        </context.Provider>
     </div>
   )
 }
