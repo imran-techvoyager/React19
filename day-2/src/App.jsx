@@ -6,11 +6,13 @@ import UserProfile from './context/UserProfile';
 import UserUpdate from './context/UserUpdate';
 import Reference from './ref/Reference';
 import Timer from './timer/Timer';
+import useFetch from './custom/useFetch';
 
 export const context = createContext();
 export const context1 = createContext();
 
 const App = () => {
+  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos")
   const name = "imran";
   const age = 23;
 
@@ -26,7 +28,10 @@ const App = () => {
     // </UserProvider>
     <div>
       {/* <Reference /> */}
-      <Timer />
+      {/* <Timer /> */}
+      {data && data.map((item) => (
+         <h1 key={item.id}>{item.title}</h1>
+      ))}
     </div>
   )
 }
