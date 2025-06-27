@@ -4,6 +4,7 @@ import { createContext } from 'react';
 import { UserProvider } from './context/UserContext';
 import UserProfile from './context/UserProfile';
 import UserUpdate from './context/UserUpdate';
+import Reference from './ref/Reference';
 
 export const context = createContext();
 export const context1 = createContext();
@@ -18,10 +19,13 @@ const App = () => {
     //     <ComponentA />
     //   </context1.Provider>
     // </context.Provider>
-    <UserProvider>
-      <UserProfile />
-      <UserUpdate />
-    </UserProvider>
+    // <UserProvider>
+    //   <UserProfile />
+    //   <UserUpdate />
+    // </UserProvider>
+    <div>
+      <Reference />
+    </div>
   )
 }
 
