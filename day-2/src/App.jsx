@@ -5,6 +5,7 @@ import { UserProvider } from './context/UserContext';
 import UserProfile from './context/UserProfile';
 import UserUpdate from './context/UserUpdate';
 import Reference from './ref/Reference';
+import Timer from './timer/Timer';
 
 export const context = createContext();
 export const context1 = createContext();
@@ -24,7 +25,8 @@ const App = () => {
     //   <UserUpdate />
     // </UserProvider>
     <div>
-      <Reference />
+      {/* <Reference /> */}
+      <Timer />
     </div>
   )
 }
