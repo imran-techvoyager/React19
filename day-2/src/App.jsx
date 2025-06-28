@@ -7,6 +7,7 @@ import UserUpdate from './context/UserUpdate';
 import Reference from './ref/Reference';
 import Timer from './timer/Timer';
 import useFetch from './custom/useFetch';
+import Todo from './projects/todo/Todo';
 
 export const context = createContext();
 export const context1 = createContext();
@@ -29,9 +30,10 @@ const App = () => {
     <div>
       {/* <Reference /> */}
       {/* <Timer /> */}
-      {data && data.map((item) => (
+      {/* {data && data.map((item) => (
          <h1 key={item.id}>{item.title}</h1>
-      ))}
+      ))} */}
+      <Todo />
     </div>
   )
 }
