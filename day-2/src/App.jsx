@@ -8,6 +8,7 @@ import Reference from './ref/Reference';
 import Timer from './timer/Timer';
 import useFetch from './custom/useFetch';
 import Todo from './projects/todo/Todo';
+import Meal from './projects/meals/Meal';
 
 export const context = createContext();
 export const context1 = createContext();
@@ -33,7 +34,8 @@ const App = () => {
       {/* {data && data.map((item) => (
          <h1 key={item.id}>{item.title}</h1>
       ))} */}
-      <Todo />
+      {/* <Todo /> */}
+      <Meal />
     </div>
   )
 }
