@@ -12,6 +12,7 @@ import Meal from './projects/meals/Meal';
 import Calculator from './projects/calculator/Calculator';
 import Accordion from './projects/accordion/Accordion';
 import { accordionData } from './projects/accordion/utils/content';
+import Form from './projects/form/Form';
 
 export const context = createContext();
 export const context1 = createContext();
@@ -40,11 +41,12 @@ const App = () => {
       {/* <Todo /> */}
       {/* <Meal /> */}
       {/* <Calculator /> */}
-      <div>
+      {/* <div>
         {accordionData.map(({title, content}) => (
           <Accordion title={title} content={content} />
         ))}
-      </div>
+      </div> */}
+      <Form />
     </div>
   )
 }
