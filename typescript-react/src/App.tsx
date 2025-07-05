@@ -3,6 +3,7 @@ import Button from "./components/Button"
 import User from "./components/User"
 import User1 from "./components/User1"
 import UserInfo from "./components/UserInfo"
+import UserProfile from "./components/UserProfile"
 import { type Info, type AdminInfoList } from "./types"
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Button label = 'Click' onClick={() => console.log('clicked')} disabled={false}/>
         <UserInfo user={user} />
         <AdminInfo admin={admin}/>
+        <UserProfile />
     </div>
   )
 }
