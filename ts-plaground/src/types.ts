@@ -9,7 +9,7 @@ type Employee = {
     married?: boolean;
 }
 
-type User = Person & Employee;  //combined types
+type User = Person & Employee;  //combined types or intersection types
 
 const user: Person = {
     name: "imran",
