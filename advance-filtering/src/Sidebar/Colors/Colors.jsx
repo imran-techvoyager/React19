@@ -9,7 +9,7 @@ const Colors = () => {
         
         <label className="sidebar-label-container">
           <input onChange={handleChange} value="" type="radio" name="test2"/>
-          <span className="checkmark"></span>All
+          <span className="checkmark all"></span>All
         </label>
 
         <Input 
