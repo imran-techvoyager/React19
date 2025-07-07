@@ -6,9 +6,26 @@ const Colors = () => {
   return (
     <div>
       <h2 className="sidebar-title color-title">Color</h2>
+        
+        <label className="sidebar-label-container">
+          <input onChange={handleChange} value="" type="radio" name="test2"/>
+          <span className="checkmark"></span>All
+        </label>
 
-        <Input />
-        <Input />
+        <Input 
+          handleChange={handleChange}
+          name="test2"
+          value="black"
+          title="Black"
+          color="black"
+        />
+        <Input 
+          handleChange={handleChange}
+          name="test2"
+          value="red"
+          title="Red"
+          color="red"
+        />
     </div>
   )
 }
