@@ -29,7 +29,7 @@ const UserProfile = () => {
             <input type="text" value={profile.email} placeholder="enter email" onChange={(e) => updateEmail(e.target.value)}/>
         </div>
         <div>
-            <input type="number" value={profile.age} placeholder="enter age" onChange={(e) => updateAge(e.target.value)}/>
+            <input type="number" value={profile.age > 0 ? profile.age : ''} placeholder="enter age" onChange={(e) => updateAge(e.target.value)}/>
         </div>
         <div>
             <h1>{profile.name}</h1>
