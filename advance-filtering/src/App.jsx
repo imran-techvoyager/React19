@@ -3,6 +3,7 @@ import Nav from "./Navigation/Nav"
 import Product from "./Product/Product"
 import Recommended from "./Recommended/Recommended"
 import Sidebar from "./Sidebar/Sidebar"
+import "./index.css"
 //database
 import products from "./db/data"
 import Card from "./components/Card"
