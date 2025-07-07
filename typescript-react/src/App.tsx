@@ -1,6 +1,7 @@
 // import AdminInfo from "./components/AdminInfo"
 // import Button from "./components/Button"
-import Todo from "./components/Todo"
+import Form from "./components/Form"
+// import Todo from "./components/Todo"
 // import User from "./components/User"
 // import User1 from "./components/User1"
 // import UserInfo from "./components/UserInfo"
@@ -32,7 +33,8 @@ function App() {
         <UserInfo user={user} />
         <AdminInfo admin={admin}/>
         <UserProfile /> */}
-        <Todo />
+        {/* <Todo /> */}
+        <Form />
     </div>
   )
 }
