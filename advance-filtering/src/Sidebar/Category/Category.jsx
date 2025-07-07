@@ -2,7 +2,7 @@ import React from 'react'
 import "./Category.css";
 import Input from '../../components/Input';
 
-const Category = () => {
+const Category = ({handleChange}) => {
   return (
     <div>
       <h2 className="sidebar-title">Category</h2>
@@ -14,8 +14,8 @@ const Category = () => {
         </label>
         <Input 
            handleChange={handleChange}
-           value="Sneakers"
-           title="Sneakers"
+           value="sneakers"
+           title="sneakers"
            name="test"
         />
         <Input 
