@@ -1,13 +1,14 @@
-import FetchData from "./components/FetchData"
+// import FetchData from "./components/FetchData"
+import { Suspense } from "react"
+import NewFetch from "./components/NewFetch"
 
 function App() {
 
   return (
-    <>
-      <div>
-        <FetchData />
-      </div>
-    </>
+      <Suspense>
+        {/* <FetchData /> */}
+          <NewFetch />
+      </Suspense>
   )
 }
 
